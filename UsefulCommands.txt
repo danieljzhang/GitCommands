@@ -1,0 +1,55 @@
+Useful Git commands 
+
+Last edited: Oct. 13, 2017
+
+- Config
+	
+	git config --list : see settings
+
+- See differences
+
+	git diff: shows any remaining unstaged changes
+			  The difference between working tree and the index
+		  
+	git diff --cached: shows the difference between index and the last commit instead.
+		  
+	example: 
+		git diff branch-name
+		git diff branch-name path/to/file
+		
+	
+	git diff COMMIT1_ID COMMIT2_ID: see differences between two commits
+		
+- Unstage
+
+	git reset: unstage
+	
+	example:
+	git reset HEAD file.txt
+	
+- Revert
+
+	git revert 9c6a1fad
+
+- Commit
+
+	Commit message convention: make the first line no longer than 50–60 characters or so. 
+							   If you need further lines, then separate them from the first one with a
+							   blank line, and wrap the remaining paragraphs to 72 characters.
+
+	git commit --amend: you run commit but you realize you made a mistake, for example, forgot one file.
+	
+	for example:
+		git commit --amend -m "New commit message"
+
+- Branch
+
+	git branch: see local branches
+
+
+	git branch -a: See all branches
+
+- Merge 
+	
+	git checkout master
+	git merge branch-name: merge branch commits
