@@ -1,6 +1,6 @@
 Useful Git commands 
 
-Last edited: Oct. 13, 2017
+Last edited: Jan 28, 2018
 
 - Config
 	
@@ -53,3 +53,14 @@ Last edited: Oct. 13, 2017
 	
 	git checkout master
 	git merge branch-name: merge branch commits
+
+- Stash
+
+   git stash
+   
+   git stash apply
+   git stash apply stash@{2}
+   
+   git stash list
+   
+   git stash drop stash@{2}
